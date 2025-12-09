@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import Image from "next/image";
 import Service from "./products/Service";
 import Link from "next/link";
+import NewsLetter from "./newsletter/page";
 
 export default function HomePage() {
   return (
@@ -44,6 +45,10 @@ export default function HomePage() {
 
       <div>
         <Service />
+      </div>
+
+      <div className="py-10">
+        <NewsLetter/>
       </div>
     </div>
   );
