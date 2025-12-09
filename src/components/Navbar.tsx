@@ -13,7 +13,7 @@ export default function Navbar() {
       <div className="max-w-7xl text-sm mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Left */}
-          <div className="flex space-x-2 md:space-x-6">
+          <div className="flex space-x-4 md:space-x-6">
             <Link href="/" className="hover:text-primary">
               Home
             </Link>

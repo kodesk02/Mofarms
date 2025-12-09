@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import Image from "next/image";
-import Service from "./(services)/Service";
+import Service from "./products/Service";
 
 export default function HomePage() {
   return (

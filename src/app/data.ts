@@ -18,38 +18,71 @@ export const SERVICE = [
 export const SERVICE_CARDS = {
   ornamental: [
     {
-      title: "",
-      image: "",
+      title: "Peacocks",
+      image: "/images/peacock.jpg",
+    },
+     {
+      title: "Ostrich",
+      image: "/images/ostrich.jpg",
+    },
+     {
+      title: "Foreign Chicken",
+      image: "/images/foreign_chicken.jpg",
+    },
+     {
+      title: "Parrot",
+      image: "/images/parrot.jpg",
+    },
+
+     {
+      title: "Duck",
+      image: "/images/duck.jpg",
     },
   ],
   farm: [
     {
-      title: "",
-      image: "",
+      title: "Chicken",
+      image: "/images/chicken.jpg",
+    },
+     {
+      title: "Goose",
+      image: "/images/geese.jpg",
+    },
+     {
+      title: "Goat",
+      image: "/images/goat.jpg",
     },
   ],
   rodents: [
     {
-      title: "",
-      image: "",
+      title: "Rabbit",
+      image: "/images/rabbit.jpg",
+    },
+     {
+      title: "Guinea Pig",
+      image: "/images/hamster.jpg",
     },
   ],
   bird_cage: [
     {
-      title: "",
-      image: "",
+      title: "One cage",
+      image: "/images/cage.jpg",
     },
   ],
   vet_care: [
     {
-      title: "",
-      image: "",
+      title: "General Checkup",
+      image: "/images/checkup.jpg",
+    },
+     {
+      title: "Vaccine",
+      image: "/images/vaccine.jpg",
     },
   ],
   pet_advice: [
     {
-      title: "",
-      image: "",
+      title: "Talk with us",
+      image: "/images/talk.jpg",
     },
   ],
 };
