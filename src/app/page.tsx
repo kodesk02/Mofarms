@@ -1,6 +1,7 @@
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import Service from "./products/Service";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -30,7 +31,7 @@ export default function HomePage() {
           </span>
 
           <div className="mt-16 flex items-center">
-            Our Products
+            <Link href={"/products"}>Our Products</Link>
             <Icon
               icon="material-symbols-light:arrow-right"
               width="25"
@@ -42,7 +43,7 @@ export default function HomePage() {
       </div>
 
       <div>
-        <Service/>
+        <Service />
       </div>
     </div>
   );
