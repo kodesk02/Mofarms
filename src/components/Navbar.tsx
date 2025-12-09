@@ -17,7 +17,7 @@ export default function Navbar() {
             <Link href="/" className="hover:text-primary">
               Home
             </Link>
-            <Link href="#" className="hover:text-primary">
+            <Link href="/products" className="hover:text-primary">
               Products
             </Link>
           </div>
@@ -84,13 +84,13 @@ export default function Navbar() {
         <div className="shadow-lg pb-8">
           <div className="md:hidden px-2 pt-2 pb-3 space-y-1 bg-background">
             <Link
-              href="#"
+              href="/"
               className="block px-3 py-2 rounded-md hover:bg-primary hover:text-white"
             >
               Home
             </Link>
             <Link
-              href="#"
+              href="/products"
               className="block px-3 py-2 rounded-md hover:bg-primary hover:text-white"
             >
               Products
