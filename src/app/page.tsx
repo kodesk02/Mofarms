@@ -1,9 +1,10 @@
 import { Icon } from "@iconify/react";
 import Image from "next/image";
+import Service from "./(services)/Service";
 
 export default function HomePage() {
   return (
-    <div className="py-2 px-10">
+    <div className="py-2 px-4 md:px-10">
       <div className="w-full h-[60vh] md:h-[80vh] relative">
         <Image
           src="/images/bg2.jpg"
@@ -38,6 +39,10 @@ export default function HomePage() {
             />
           </div>
         </div>
+      </div>
+
+      <div>
+        <Service/>
       </div>
     </div>
   );

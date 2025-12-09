@@ -34,24 +34,32 @@ export default function Navbar() {
 
           {/* Right */}
           <div className="hidden md:flex space-x-4">
-            <Icon
-              icon="ic:round-phone"
-              width="25"
-              height="25"
-              className="cursor-pointer text-gray-500 hover:text-primary"
-            />
+            <Link href={"tel:+2348126891034"} target="_blank" rel="noopener noreferrer">
+              <Icon
+                icon="ic:round-phone"
+                width="25"
+                height="25"
+                className="cursor-pointer text-gray-500 hover:text-primary"
+              />
+            </Link>
+            <Link href={`https://wa.me/+2348126891034`} target="_blank" rel="noopener noreferrer">
             <Icon
               icon="ic:sharp-whatsapp"
               width="25"
               height="25"
               className="cursor-pointer text-gray-500 hover:text-primary"
             />
+            </Link>
+
+            <Link href={"mailto:Mofarms.ng@gmail.com"} target="_blank" rel="noopener noreferrer">
+
             <Icon
               icon="material-symbols:mail"
               width="25"
               height="25"
               className="cursor-pointer text-gray-500 hover:text-primary"
             />
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -61,7 +69,7 @@ export default function Navbar() {
               className="text-foreground focus:outline-none"
             >
               <Icon
-              className="text-gray-500 hover:text-primary"
+                className="text-gray-500 hover:text-primary"
                 icon={menuOpen ? "mdi:close" : "mdi:menu"}
                 width="28"
                 height="28"
