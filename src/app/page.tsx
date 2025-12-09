@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function HomePage() {
   return (
     <div className="py-2 px-10">
-      <div className="w-full h-[80vh] relative">
+      <div className="w-full h-[60vh] md:h-[80vh] relative">
         <Image
           src="/images/bg2.jpg"
           alt="Background"
