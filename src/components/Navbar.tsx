@@ -97,24 +97,32 @@ export default function Navbar() {
             </Link>
           </div>
           <div className="md:hidden flex justify-center space-x-6">
-            <Icon
-              icon="ic:round-phone"
-              width="25"
-              height="25"
-              className="cursor-pointer text-gray-500 hover:text-primary"
-            />
+            <Link href={"tel:+2348126891034"} target="_blank" rel="noopener noreferrer">
+              <Icon
+                icon="ic:round-phone"
+                width="25"
+                height="25"
+                className="cursor-pointer text-gray-500 hover:text-primary"
+              />
+            </Link>
+            <Link href={`https://wa.me/+2348126891034`} target="_blank" rel="noopener noreferrer">
             <Icon
               icon="ic:sharp-whatsapp"
               width="25"
               height="25"
               className="cursor-pointer text-gray-500 hover:text-primary"
             />
+            </Link>
+
+            <Link href={"mailto:Mofarms.ng@gmail.com"} target="_blank" rel="noopener noreferrer">
+
             <Icon
               icon="material-symbols:mail"
               width="25"
               height="25"
               className="cursor-pointer text-gray-500 hover:text-primary"
             />
+            </Link>
           </div>
         </div>
       )}
