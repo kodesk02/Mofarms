@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div className="bg-gray-200">
+    // <div className="bg-gray-200">
       <div className="md:flex p-10 md:space-y-0 space-y-8 inline">
         <div className="md:w-1/2 flex md:items-start flex-col items-center md:justify-start justify-center font-light ">
           <div className="shrink-0">
@@ -35,6 +35,6 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-    </div>
+    // </div>
   );
 }
