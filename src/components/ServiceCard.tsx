@@ -7,7 +7,7 @@ interface ServiceCardProps {
 
 export default function ServiceCard({ title, image }: ServiceCardProps) {
   return (
-    <div>
+    <div className="cursor-pointer">
       <div className="rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
         <div className="relative h-48">
           {image ? (
@@ -15,7 +15,7 @@ export default function ServiceCard({ title, image }: ServiceCardProps) {
               src={image}
               alt={title}
               fill
-              className="object-cover transform scale-100 hover:scale-120 transition-transform duration-500"
+              className="object-cover transform scale-100 hover:scale-110 transition-transform duration-500"
             />
           ) : (
             <div className="flex items-center justify-center h-full text-gray-400">
