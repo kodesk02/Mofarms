@@ -14,11 +14,15 @@ export default function About() {
           </span>
 
           <div className="text-center mb-2 text-sm px-10 leading-7">
-            Mo Farms was established to meet the growing need for quality animal
-            care and supply in Nigeria. With years of experience, we have grown
-            into a trusted source for all kinds of animals, specializing in
-            ornamental birds and providing exceptional service across the
-            country.
+            Mofarms.nig is a premier brand in Nigeria, specializing in the
+            breeding, sale, and supply of high-quality exotic animals such as
+            parrots,peacocks,guinea pigs & fowl, ostrich,rabbits,geese, and
+            other rare species. The brand is committed to meeting the rising
+            demand for exotic pets by offering ethically sourced, healthy, and
+            well-maintained animals. Mofarms.nig aims to deliver exceptional
+            livestock to both local and international clients while upholding
+            values of sustainability, animal welfare, and customer
+            satisfaction.
           </div>
         </div>
       </div>
