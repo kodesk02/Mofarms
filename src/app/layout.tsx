@@ -32,8 +32,8 @@ export default function RootLayout({
         <main className="min-h-screen bg-background font-extralight">
           <Navbar/>
           {children}
-          <Footer/>
         </main>
+          <Footer/>
       </body>
     </html>
   );

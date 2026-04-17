@@ -1,5 +1,8 @@
 import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
+import { useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 interface ServiceDetailViewProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -9,6 +12,10 @@ interface ServiceDetailViewProps {
 
 export default function ServiceDetailView({ card, onBack }: ServiceDetailViewProps) {
   const galleryImages = card?.gallery || [];
+  const [open, setOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+
+  const slides = galleryImages.map((src: string) => ({ src }));
 
   return (
     <div className="py-2 px-4 md:px-10 min-h-screen">
@@ -28,14 +35,15 @@ export default function ServiceDetailView({ card, onBack }: ServiceDetailViewPro
 
       {/* Image Gallery Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 auto-rows-fr">
-        {galleryImages.map((image: string, index: number) => (
+        {galleryImages.map((image: string, i: number) => (
           <div
-            key={index}
+            key={i}
+            onClick={() => { setIndex(i); setOpen(true); }}
             className="relative aspect-square rounded-lg overflow-hidden group cursor-pointer"
           >
             <Image
               src={image}
-              alt={`${card?.title} - Image ${index + 1}`}
+              alt={`${card?.title} - Image ${i + 1}`}
               fill
               className="object-cover transform transition-transform duration-500 group-hover:scale-110"
             />
@@ -43,6 +51,13 @@ export default function ServiceDetailView({ card, onBack }: ServiceDetailViewPro
           </div>
         ))}
       </div>
+
+      <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        index={index}
+        slides={slides}
+      />
     </div>
   );
 }
